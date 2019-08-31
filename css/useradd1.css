@@ -1,0 +1,1402 @@
+/* resetting browser styling */
+*, *::before, *::after {
+
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+    margin: 0;
+	padding: 0;
+
+}
+
+html{
+    padding: 0;
+    margin: 0;
+    font-weight: 300; 
+    background: #dfdfe0;
+    width: 100vw;
+    height: 100vh;
+    text-rendering: optimizeLegibility;
+    
+}
+
+body {
+    /* padding: 0px;
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Trebuchet MS', sans-serif; */
+    position: fixed;
+}
+
+.left-right{
+display: flex;
+flex-direction: row;
+}
+
+.section-left{
+    background: rgb(141, 149, 163);
+    width:20vw;
+    height: 100vh;
+    border-top: 5px solid #cf2927;
+    /* position: fixed; */
+}
+
+.section-right{
+    width: 80vw;
+    height: 100vh;
+    background-color: #eee;
+    
+}
+
+
+/* -------------------navigation bar styling-------------------------------- */
+
+.search-and-navbar {
+    height: 12%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 5px solid #cf2927;
+    width: 100%;
+}
+.nav-bar{
+    width: 70%;
+}
+.nav-bar ul {
+    margin-top: 3%;
+    display: inline-flex;
+}
+
+.nav-bar li {
+    display: inline-flex;
+    margin-left: 10%;
+}
+
+
+.nav-bar li .dropbtn {
+    color: #000;
+    text-decoration: none;
+    font-size: 110%;
+    transition: 0.6s ease-in-out;
+    
+}
+.nav-bar li .dropdown-content a{
+    font-size: 100%;
+    color: #000;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    text-decoration: none;
+    margin-left: 7%;
+    transition: 0.6s ease-in-out;
+    
+} 
+.dropdown-content{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-left: 1%;
+    z-index: 290;
+}
+
+ul {
+    display: flex;
+}
+
+
+.dropbtn {
+    color: white;
+    padding: 10px;
+    font-size: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 240%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 0;
+    
+  }
+
+
+.dropdown-content a {
+    color: white;
+
+    text-decoration: none;
+    display: block;
+    margin-top: 0.8%;
+    font-size: 50%;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: #f1f1f1; 
+      color:black;
+    }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    margin-top: 30px;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #f1f1f1;
+    color: black;
+  }
+
+
+/* --------------------------- */
+.search-box {
+    width: 30%;
+    display: inline-flex;
+    margin-right: 5%;
+    position: relative;
+    
+}
+.search-box .forsearch{
+    color: #cf2927;
+    font-size: 150%;
+    position: absolute;
+    /* top: 4%; */
+    margin-top: 7%;
+    left: 90%;
+    
+}
+
+.search-box input[type="text"] {
+    height: 65%;
+    border-radius: 5px;
+    margin-top: 4.3%;
+    width: 180%;
+    padding: 4%;
+    font-size: 100%;
+    color: #cf2927;
+    border: 2px solid #cf2927;
+    background-color: #eee;
+}
+/* -------------- -- admin detail panels --------------- -------------*/
+.detail-panels{
+    margin-top: 4%;
+}
+
+
+.heading h1 {
+    color: #cf2927;
+    margin-left: 5%;
+}
+.parag{
+    margin-top: 1%;
+    margin-left: 5%;
+}
+
+
+.title {
+  margin-top: 0px !important;
+}
+/* --------------------- */
+.pannels{
+    margin-top: 4%;
+}
+.boxii{
+    width: 26%;
+    height: 140px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+.boxii a{
+    text-decoration: none;
+    color: #000; 
+}
+.boxii a:hover{
+    color: #7e7894;
+}
+
+
+.boxi .boxi-icon{
+    text-align: center;
+    font-size: 80px;
+}
+.boxi .box-info1{
+    text-align: center;
+}
+
+.panel-row-one {
+    display: flex;
+    flex-direction: row;
+    
+ }
+
+.panel-row-two {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+/* -------------------------------------side bar------------------- */
+
+
+.sidebar{
+       text-decoration: none;
+      width: 19vw;
+      margin-left: 0.5vw;
+      margin-top: 10%;
+}
+   
+.s_sidebar{
+      
+       list-style: none;
+        width: 19vw;
+       overflow: hidden;
+       border-radius: 8px;   
+       
+   
+}
+
+.s_sidebar a{
+    text-decoration: none;
+}
+
+.item{
+    border-top: 1px solid #cf2927;
+    overflow: hidden;
+}
+.btn{
+    display: block;
+    padding: 8px 10px;
+    background: #7e7894;
+    color: white;
+    position: relative;
+
+}
+.btn:before{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #cf2927;
+    right: 20px;
+    bottom: -7px;
+    transform: rotate(45deg);
+}
+
+.btn i{
+    margin-right: 10px;
+}
+
+.smenu{
+    background: #fff;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    max-height: 1px;
+}
+.smenu a{
+    display: block;
+    padding: 12px 8px;
+    color: #7e7894;
+    font-size: 1vw;
+    margin: 4px 0;
+    position: relative;
+}
+.item:target .smenu{
+    max-height: 20em;
+}
+.fa{
+    color: #cf2927;
+    display: inline-block;
+    margin-right: 0.5rem;
+    width: 10px;
+}
+   .smenu a:active, 
+   .smenu a:hover{
+   
+       background: rgb(141, 149, 163);
+       border-left: 5px solid #cf2927;
+       /* padding: 12px 12px 15px 15px; */
+       color: #fff;
+       transition: 0.3s;
+       overflow: hidden;
+   
+       font-size: 1vw;
+       margin: 4px 0;
+       position: relative;
+   
+   }
+
+   .sidemenu {
+       display: flex;
+       flex-direction: column; 
+   }
+   .logo img{
+       width:20vw;
+   }
+
+
+/* ----------------------apm css styling below---------------------------*/  
+.attendance_photo{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.control-buttons{
+    margin-top: 1%;
+}
+
+.button-all {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+background: #cf2927;
+}
+
+.thebtn_anyway{
+    background: #fff;
+    width: 49%;
+    display: flex;
+    flex-direction: row;
+}
+.thebtn_anyway .button-one{
+    margin-left: 5%;
+    width: 50%;
+}
+.thebtn_anyway .button-two{
+    width: 50%;
+    margin-left: 5%;
+}
+.btn-select button{
+    width: 70%;
+    font-size: 100%;
+    margin-top: 15%;
+    height:  40%;
+    
+}
+.button-one button{
+    margin-left: 30%;
+}
+
+
+.inside-photo-styling{
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    width: 49%;
+}
+.inside_thebtn_anyway{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.btn-select1 button{
+
+    width: 70%;
+    margin-left: 10%;
+    font-size: 100%;
+    /* height:  40%; */
+
+}
+.button-four button{
+    margin-top: 10%;
+    height: 80%;
+}
+.button-three  button{
+    margin-top: 9%;
+    height: 80%;
+}
+/* ----------------- */
+.to_style_but button{
+    background: #f7f7f7;
+      border-left: solid 6px #ff7c5c;
+      color: #ff7c5c;
+      font-weight: bold;
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+
+}
+
+
+.to_style_but button:active {
+    box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+    transform: translateY(2px);
+}
+.to_style_but button:hover{
+    color: white;
+    border-left: solid 6px white;
+    background: #ff7c5c;
+}
+/* ---------------- */
+
+.photo-user{
+    width: 50%;
+
+}
+
+
+
+.card {
+    background-color: white;
+}
+.content  table{
+    width: 100%;
+}
+
+.content thead,table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    }
+.content th, td{
+    	padding: 10px;
+    	text-align: center;
+}
+.content tr:nth-child(even){
+    	background: #eee;
+    	
+    }
+
+.apm-below{
+    list-style: none;
+    float: left;
+}
+.apm-belowphoto{
+    list-style: none;
+    float: left;
+}
+.apm-below li,
+.apm-belowphoto li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+.scrolla {
+    overflow: scroll;
+    /* padding: 2%; */
+    height: 50vh;
+    position: relative;
+}
+
+.card{
+    padding: 10px;
+}
+
+/* ...................End of  attendance_photo..................... */
+
+
+
+
+ /* -----------user detail pannel----------------- */
+ .user-panels{
+    display: flex;
+    flex-direction: column;
+    /* border-left: 2px solid #ff7c5c; */
+    justify-content: space-around;
+    padding: 1%;
+
+ }
+ .user-pannel-menu{
+    background: #ff7c5c;
+    width: 100%;
+    height: 8vh;
+ }
+ .user-pannel-menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2vh;
+   
+ }
+ .user-pannel-menu ul li  a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.9s;
+     
+}
+.user-pannel-menu ul li  a:hover{
+    color: #000;
+    cursor: pointer;
+}
+.user-pannel-first{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 47vh;
+    /* margin-top: 0.5%; */
+ 
+}
+.user-pannel-first-column{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 0.5%; */
+    width: 30%;
+}
+.first-box{
+    width: 95%;
+    height: 100%;
+    background: #fff;
+}
+.user-table{
+    width: 70%;
+    /* margin-left: 1%; */
+  
+}
+.user-table-start{
+    width: 100%;
+}
+.user-table-start{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.user-table-star thead,table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    }
+.user-table-star th, td{
+    	padding: 10px;
+    	text-align: center;
+}
+/* .user-table-star tbody, tr:nth-child(even){
+    	background: #eee;
+    	
+    } */
+
+/* -----------To add user area --------- */
+
+.user-pannel-second{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    background: #dfdfe0;
+    width: 100%;
+    height: 45vh;
+    
+}
+.user-pannel-1nputs{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    height: 100%;
+    
+}
+.user-pannel-1nputs1 ul{
+    list-style: none;
+    display: block;
+    
+}
+.user-pannel-1nputs1 ul li{
+    margin-top: 5%;
+    font-size: 105%;
+   
+}
+/* ........ */
+.user-pannel-1nputs2 ul{
+    list-style: none;
+    display: block;
+}
+.user-pannel-1nputs2{
+    margin-left:4% 
+}
+
+.user-pannel-1nputs2 ul li{
+    margin-top: 3%;
+}
+
+.user-pannel-1nputs22{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    height: 100%;
+    /* margin-top: 0.5%; */
+}
+.lables-user-pannel ul{
+    list-style: none;
+    display: block;
+    /* margin-left: -5%; */
+    
+}
+.lables-user-pannel{
+    margin-left: -7%;
+}
+.lables-user-pannel ul li{
+    margin-top: 5%;
+    font-size: 105%;
+    
+}
+.lables-user-pannel-1nputs{
+    margin-left: 2%;
+}
+.lables-user-pannel-1nputs ul{
+    list-style: none;
+    display: block;
+
+}
+.lables-user-pannel-1nputs ul li{
+    margin-top: 5%;
+    
+}
+.user-photo22{
+    display: flex;
+    flex-direction: column;
+    background: #cf2927;
+    width: 20%;
+    height: 100%;
+}
+
+.photo22{
+    width: 100%;
+    height: 55%;
+}
+.photo22 img {
+    width: 100%;
+    height: 100%;
+}
+
+.thebut{
+    background: #fff;
+    width: 100%;
+    height: 45%;
+    
+}
+.thebut li button{
+    width: 130%;
+    height: 150%;
+    background: #f7f7f7;
+    border-left: solid 6px #ff7c5c;
+    color: #ff7c5c;
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+}
+
+.thebut ul{
+    list-style: none;
+    display: inline-flex;
+    margin-left: 4%;
+    /* margin-top: 9%; */
+}
+.userbtn li{
+    margin-left: 25%;
+    
+} 
+.user-fingerprint{
+    display: flex;
+    width: 20%;
+    height: 100%;
+    margin-left: 2%;
+    flex-direction: column;
+    
+}
+.fingermanage{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.fingermanage h3{
+    font-size: 100%;
+
+}
+.fingercombo{
+    width: 100%;
+    margin-bottom: 2%;
+}
+.fingercombo label select {
+    width: 5vw;
+}
+.forthebut{
+    width: 100%;
+    margin-bottom: 2%;
+}
+.forthebut button{
+    width: 60%;
+    height: 150%;
+    font-size: 80%;
+    background: #f7f7f7;
+    border-left: solid 6px #ff7c5c;
+    color: #ff7c5c;
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    
+}
+.user-horiradio{
+    margin-top: 3%;
+}
+.user-horiradio div label{
+    font-size: 90%;
+    
+}
+.user-horibut{
+    margin-top: 2%;
+}
+.user-add{
+    width: 100%;
+    margin-top: 8%;
+    margin-left: 8%;
+}
+.user-add button{
+    width: 80%;
+    height: 150%;
+    font-size: 80%;
+    background:#ff7c5c ;
+    /* border-left: solid 6px #ff7c5c; */
+    color:#f7f7f7 ;
+    font-weight: bold;
+    transition: 0.9s;
+    /* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29); */
+}
+.user-add button:hover{
+    background: #000;
+}
+
+.user-horibut button{
+    width: 50%;
+    height: 150%;
+    font-size: 90%;
+    background: #f7f7f7;
+    border-left: solid 6px #ff7c5c;
+    color: #ff7c5c;
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+}
+
+
+.userbtn button:active {
+    box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+    transform: translateY(2px);
+}
+.userbtn button:hover{
+    color: white;
+    border-left: solid 6px white;
+    background: #ff7c5c;
+}
+
+/* ...................the modal area------------------------------------ */
+
+.theimport{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+
+  .the_content{
+    width: 50%;
+    height: 40%;
+    /* border-radius: 2%; */
+    background-color: #fff;
+    position: relative;
+  }
+  .to_import{
+      display: flex;
+      flex-direction: column;
+  }
+  .theimport_head{
+      border-bottom: 3px solid #cf2927;
+      margin-top: 4%;
+
+  }
+  .theimport_head h3{
+      margin-left: 2%;
+      margin-bottom: 3%;
+  }
+ 
+  .margin{
+      text-align: center;
+      /* margin-top: 2%; */
+      
+  }
+  .da_text{
+      margin-left: 32%;
+      margin-top: 2%;
+  }
+  .margin input{
+      width: 40%;
+      margin-top: 1%;
+
+  }
+  .buttons{
+      text-align: center;
+      margin-top: 2%;
+  }
+  .square_btn{
+    /* margin-top: ; */
+      width: 20%;
+      font-size: 13px;
+      display: inline-block;
+      padding: 0.5em 1em;
+      text-decoration: none;
+      background: #f3e7e7;
+      border-left: solid 6px #ff7c5c;
+      color: #ff7c5c;
+      font-weight: bold;
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  }
+  .square_btnr:active {
+      box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+      transform: translateY(2px);
+  }
+  .square_btn:hover{
+      color: white;
+      border-left: solid 6px white;
+      background: #ff7c5c;
+  }
+  .close{
+    top: 0;
+    position: absolute;
+    font-size: 50px;
+    right: 3%;
+    /* color: #ff7c5c; */
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+  .close:hover{
+      color: #ff7c5c;
+  }
+
+  /* .........the export....... */
+  .theExport{
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+  }
+  .to_Export{
+
+    display: flex;
+    flex-direction: column;
+
+  }
+  .theExport_head{
+    border-bottom: 3px solid #cf2927;
+    margin-top: 4%;
+  }
+  .theExport_head h3{
+    margin-left: 2%;
+    margin-bottom: 3%;
+}
+.da_text1{
+    margin-left: 32%;
+    margin-top: 2%;
+}
+.margin1,.margin11 {
+    text-align: center;
+}
+/* .margin11{
+    text-align: center;
+} */
+.margin1 input{
+    width: 40%;
+    margin-top: 1%;
+    /* margin-left: 30%; */
+    /* align-items: center; */
+
+}
+.theExport_head11 {
+    margin-left: 25%;
+    margin-top: 2%;
+    font-size: 80%;
+    /* align-items: center;  */
+    margin-bottom: 2%;
+
+}
+
+.btnclose{
+    top: 0;
+    position: absolute;
+    font-size: 50px;
+    right: 3%;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+  .btnclose:hover{
+      color: #ff7c5c;
+  }
+
+  /* ...................the usb............................. */
+
+  .theusb{
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+  }
+  .usb_man{
+      
+    display: flex;
+    flex-direction: column;
+
+  }
+  .usb_head{
+    border-bottom: 3px solid #cf2927;
+    margin-top: 4%;
+
+  }
+  .usb_head h3{
+    margin-left: 2%;
+    margin-bottom: 3%;
+
+  }
+  .the_content1{
+    width: 50%;
+    height: 70%;
+    /* border-radius: 2%; */
+    background-color: #fff;
+    position: relative;
+  }
+  .da_text2{
+      text-align: center;
+      margin-top: 4%;
+  }
+
+  .margin2 {
+      display: block;
+      list-style: none;
+      margin-top: 5%;
+      margin-left: 35%; 
+  }
+  .margin2 li{
+      margin-top: 3%;
+  }
+
+  .buttons1{
+      margin-top: 10%;
+      text-align: center;
+      margin-top: 10%;
+  }
+  .btnclose1{ 
+    top: 0;
+    position: absolute;
+    font-size: 50px;
+    right: 3%;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+  .btnclose1:hover{
+    color: #ff7c5c;
+  }
+
+  /* ..................the administrator modal.................. */
+
+  .theadmin{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+  }
+  .the_content2{
+
+    width: 50%;
+    height: 70%;
+    /* border-radius: 2%; */
+    background-color: #fff;
+    position: relative;
+
+  }
+  .the_admin{
+    display: flex;
+    flex-direction: column;
+  }
+  .admin_head {   
+      border-bottom: 3px solid #cf2927;
+      margin-top: 4%;}
+
+  .admin_head h3{
+    margin-left: 2%;
+    margin-bottom: 3%;
+  }
+
+  .admin_table  table{
+    width: 95%;
+    align-items: center;
+    margin-top: 2%;
+    margin-left: 2.5%;
+}
+
+.admin_table thead,table, th, td {
+
+    border: 1px solid;
+    border-collapse: collapse;
+
+}
+.buttons2{
+
+    position: absolute;
+    width: 95%;
+    bottom: 5%;
+    margin-left: 10%;
+}
+.buttons2 .square_btn{
+
+    margin-left: 2%;
+    width: 25%;
+
+}
+.btnclose2{
+    top: 0;
+    position: absolute;
+    font-size: 50px;
+    right: 3%;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+
+.btnclose2:hover{
+    color: #ff7c5c;
+}
+
+
+
+/* ................modal for the Database options............... */
+
+[data-tab-content] {
+    display: none;
+  }
+  
+.active[data-tab-content] {
+    display: block;
+  }
+.thedboptions{
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
+.the_content3{
+
+    width: 50%;
+    height: 80%;
+    /* border-radius: 2%; */
+    background-color: #fff;
+    position: relative;
+
+}
+.the_dboptions{
+
+    display: flex;
+	flex-direction: column;
+}
+.dboptions_head{
+      border-bottom: 3px solid #cf2927;
+      margin-top: 4%;
+    }
+
+.dboptions_head h3{
+    margin-left: 2%;
+    margin-bottom: 3%;
+  }
+  .main_fo_tab{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+  .button_s{
+      margin-top: 1%;
+      width: 100%;
+
+      /* background: #ff7c5c; */
+      height: 20%;
+  }
+  .button_s ul{
+      list-style: none;
+      display: inline-flex;
+      /* border-top: 2px solid #ff7c5c; */
+      /* justify-content: space-around; */
+  }
+  .button_s ul li{
+      margin-left: 0%;
+      background: #dfdfe0;
+      text-align: center;
+      justify-content: space-around;
+      width: 161px;
+      cursor: pointer;
+      padding: 2%;
+      border-left: 2px solid #cf2927;
+      border-right: 2px solid #cf2927;
+  }
+  .button_s ul li:active {
+    background: none;
+  }
+  
+  .button_s ul li:hover {
+    background-color: #AAA;
+  }
+
+  #Provider h3{
+      font-size: 100%;
+      margin-top: 1%;
+
+  }
+  #Provider ul{
+      display: block;
+      list-style: none;
+      margin-top: 1%;
+      margin-left: 5%;
+  }
+  #Provider ul li{
+      margin-top: 0.5%;
+  }
+
+  .btn_next{
+      margin-top: 1%;
+      /* margin-left: 50%; */
+      /* background: #ff7c5c; */
+
+  }
+  .btn_next a{
+      float: right;
+      margin-right: 5%;
+  }
+
+  .buttons3{
+
+    position: absolute;
+    width: 95%;
+    bottom: 5%;
+    margin-left: 15%;
+}
+.buttons3 .square_btn{
+
+    margin-left: 2%;
+    /* width: 25%; */
+
+}
+
+hr{
+    margin-top: 1%;
+}
+
+
+.btnclose3{
+    top: 0;
+    position: absolute;
+    font-size: 50px;
+    right: 3%;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+
+.btnclose3:hover{
+    color: #ff7c5c;
+}
+
+
+
+/* ...................modal for the report................. */
+
+.thereport{
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
+
+.the_content4{
+
+    width: 50%;
+    height: 60%;
+    /* border-radius: 2%; */
+    background-color: #fff;
+    position: relative;
+
+}
+.the_report{
+    display: flex;
+    flex-direction: column;
+}
+.main_fo_report{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+
+}
+
+
+.report_herder{
+    border-bottom: 3px solid #cf2927;
+    margin-top: 10%;
+  }
+
+
+
+.report_head h3{
+    font-size: 130%;
+
+}
+.report-content select{
+    font-size: 110%;
+    margin-top: 5%;
+}
+.buttons4{
+    display: inline-flex;
+}
+
+.buttons4 .square_btn{
+    width: 10vw;
+    margin-left: 2%;
+    text-align: center;
+    margin-top: 20%;
+}
+.btnclose4{
+    top: 0;
+    position: absolute;
+    font-size: 50px;
+    right: 3%;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.btnclose4:hover{
+    color: #ff7c5c;
+}
+
+/* .............the select option report..... */
+
+.select_thereport{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.the_select_content4{
+    width: 50%;
+    height: 60%;
+    /* border-radius: 2%; */
+    background-color: #fff;
+    position: relative;
+}
+.select_report_head h3{
+    justify-content: center;
+    text-align: center;
+}
+.select_the_report{
+    display: flex;
+    flex-direction: column;
+
+}
+.select_report-content{
+    display: flex;
+    flex-direction: column;
+}
+.select_report_herder{
+    border-bottom: 3px solid #cf2927;
+    margin-top: 10%;
+}
+.select_main_fo_report{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.finalt_select{
+    display: inline-flex;
+    list-style: none;
+    margin-top: 6%;
+    margin-left: 15%;
+}
+.finalt_select li{
+
+    margin-left: 3%;
+
+}
+
+.da_condition{
+    display: inline-flex;
+    list-style: none;
+    margin-top: 5%;
+}
+.da_condition li{
+    margin-left: 1.5%;
+}
+.da_condition h3{
+    font-size: 100%;
+}
+.ipt_cond{
+    margin-left: 5%;
+}
+
+.select_buttons4{
+    display: inline-flex;
+}
+
+.select_buttons4 .square_btn{
+    width: 10vw;
+    margin-left: 2%;
+    text-align: center;
+    margin-top: 20%;
+}
+
+/* ...........the close.... */
+
+.select_btnclose4{
+    top: 0;
+    position: absolute;
+    font-size: 50px;
+    right: 3%;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.select_btnclose4:hover{
+    color: #ff7c5c;
+}
+

@@ -1,0 +1,469 @@
+/* resetting browser styling */
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+}
+
+
+/*CSS for ACL form start*/
+.first{
+    float: left;
+    width: 40%;
+    margin: 0 0 0 4%;
+}
+.third{
+    float: left;
+    width: 40%;
+    margin-left: 16%;
+}
+
+.square_btn{
+  margin-top: 4px;
+    width: 80%;
+    font-size: 13px;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #f7f7f7;
+    border-left: solid 6px #ff7c5c;
+    color: #ff7c5c;
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+}
+.square_btn:active {
+    box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+    transform: translateY(2px);
+}
+.square_btn:hover{
+    color: white;
+    border-left: solid 6px white;
+    background: #ff7c5c;
+}
+
+.square_btn_other{
+  margin-top: 4px;
+    width: 80%;
+    font-size: 13px;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #f7f7f7;
+    border-left: solid 6px #ff7c5c;
+    color: #ff7c5c;
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+}
+.square_btn_other:active {
+    box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+    transform: translateY(2px);
+}
+.square_btn_other:hover{
+    color: white;
+    border-left: solid 6px white;
+    background: #ff7c5c;
+}
+.check{
+  font-size: 12px;
+}
+.labell{
+  font-weight: bold;
+}
+select{
+  margin: 5px;
+ /* width: 73%;*/
+  height: 25px;
+}
+ul{
+      margin-top: 10px !important;
+}
+.selections{
+  width: 65%;
+      display: flex;
+    flex-direction: row;
+    /* float: left; */
+    justify-content: space-around;
+}
+
+.panel-row-one-aclog {
+   display: flex;
+   flex-direction: row;
+   width: 79vw;
+}
+
+.box-aclog{
+    margin-left: 2%;
+    width: 40%;
+    height: 177px;
+    background-color: white;
+    padding: 10px;
+    display: inline-block;
+    flex-direction: column;
+    
+}
+.box-aclog-second{
+    width: 60%;
+    margin-left: 5px;
+    height: 177px;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/*CSS for ACL form stop*/
+
+
+.left-right{
+display: flex;
+flex-direction: row;
+}
+
+.section-left{
+    background: rgb(141, 149, 163);
+    width:20vw;
+    height: 100vh;
+    border-top: 5px solid #cf2927;
+}
+
+.section-right{
+    width: 80vw;
+    height: 100vh;
+    background-color: #eee;
+    /* background-color: blue; */
+}
+
+
+/* navigation bar styling */
+.search-and-navbar {
+    height: 50px;
+    background-color: #fff;
+    /* margin-top: 0px; */
+    border: 5px solid #cf2927;
+    width: 99.1%;
+}
+.nav-bar li {
+    display: inline-block;
+    /* height: 50px; */
+}
+.nav-bar li:hover{
+    background-color: blue;
+    height: 50px;
+}
+
+.nav-bar li a {
+    display: block;
+    /* color: #cf2927; */
+    color: #000;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.search-and-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.search-box input {
+    border: 0px;
+    height: 30px;
+    border-radius: 5px;
+    width: 300px;
+    padding-left: 10px;
+    border: 2px solid #cf2927;
+    background-color: #eee;
+    /* background-image: url('../img/banner.jpg') */
+}
+.search-box {
+    margin-top: 7px;
+}
+
+.panel-row-one {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around; 
+}
+.box {
+    width: 26%;
+    height: 140px;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.box .box-icon{
+    /* background-color: pink; */
+    text-align: center;
+    font-size: 80px;
+}
+.box .box-info{
+    /* background-color: red; */
+    text-align: center;
+}
+.box .box-info:hover{
+    background-color: #7e7894;
+}
+
+.box .box-info a {
+ text-decoration: none;
+ display: block;
+ height: 27px;
+ color: #000;
+}
+.box .box-info a:hover{
+    color: white;
+}
+
+/*.box-one input, select{
+  margin-left: 30px;
+}*/
+
+.spans {
+      display: flex;
+    flex-direction: column;
+      justify-content: space-between;
+}
+
+.detail-panels h3, .detail-panels h1 {
+    padding-left: 31px ;
+}
+.heading h1 {
+    color: #cf2927;
+}
+
+.panel-row-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    margin-top: 30px;
+}
+
+/* needs cross checking */
+/* .detail-panels{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.pannels {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
+/* ......................side menu..................... */
+   /* .sidemenu{
+       background: rgb(141, 149, 163);
+       /* width: 280px; 
+       /* position: fixed; 
+       /* border-top: 4px solid #cf2927;
+       top: 0;
+       bottom: 0; 
+   
+   } */
+   .sidebar{
+       /* margin-top: 120px; */
+       text-decoration: none;
+      width: 97%;
+      margin-left: 7px;
+   }
+   
+    .s_sidebar{
+      
+       list-style: none;
+        width: 97%;
+       overflow: hidden;
+       border-radius: 8px;
+      
+   
+   }
+   .s_sidebar a{
+       text-decoration: none;
+   }
+   .item{
+       border-top: 1px solid #cf2927;
+       overflow: hidden;
+   }
+   .btn{
+       display: block;
+       padding: 8px 10px;
+       background: #7e7894;
+       color: white;
+       position: relative;
+       width: 100%;
+   
+   }
+   .btn:before{
+       content: "";
+       position: absolute;
+       width: 14px;
+       height: 14px;
+       background: #cf2927;
+       right: 20px;
+       bottom: -7px;
+       transform: rotate(45deg);
+   }
+   .btn i{
+       margin-right: 10px;
+   }
+   .smenu{
+       background: #fff;
+       overflow: hidden;
+       transition: max-height 0.3s;
+       max-height: 1px;
+   }
+   .smenu a{
+       display: block;
+       padding: 12px 15px;
+       color: #7e7894;
+       font-size: 14px;
+       margin: 4px 0;
+       position: relative;
+   }
+   .item:target .smenu{
+       max-height: 20em;
+   }
+   .fa{
+       color: #cf2927;
+       display: inline-block;
+       margin-right: 0.5rem;
+       width: 10px;
+   }
+   .smenu a:active, 
+   .smenu a:hover{
+   
+       background: rgb(141, 149, 163);
+       border-left: 5px solid #cf2927;
+       /* padding: 12px 12px 15px 15px; */
+       color: #fff;
+       transition: 0.3s;
+       overflow: hidden;
+   
+       font-size: 14px;
+       margin: 4px 0;
+       position: relative;
+   
+   }
+
+   .sidemenu {
+       display: flex;
+       flex-direction: column;
+   }
+
+
+   /* apm css styling below */
+
+   .card {
+       background-color: white;
+   }
+
+   .ACL-table table{
+    width: 100%;
+}
+
+thead{
+    background-color: #eee;
+    min-height: calc(100% - 123px);
+    border: 1px solid;
+    border-collapse: collapse;
+    }
+table{
+    min-height: calc(100% - 123px);
+    border: 1px solid;
+    border-collapse: collapse;
+    }
+th{
+    min-height: calc(100% - 123px);
+    border: 1px solid;
+    border-collapse: collapse;
+    }
+thead td{
+
+    border-right: 2px solid #524646;
+    border-collapse: collapse;
+    border-bottom: 2px solid #656060;
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    padding: 10px 5px;
+    text-align: left;
+    font-weight: bold;
+}
+tbody tr{
+    background-color: white;
+}
+td{
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 10px 5px;
+    text-align: left;
+}
+.ACL-table{
+    margin-top: 15px;
+    background-color: white;
+    padding: 25px;
+    width: 77vw;
+    margin-left: 2%;
+}
+/*tr:nth-child(even){
+    	background: #eee;
+    	
+    }*/
+
+.apm-below{
+    list-style: none;
+    float: left;
+}
+.apm-belowphoto{
+    list-style: none;
+    float: left;
+}
+.apm-below li,
+.apm-belowphoto li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.control-buttons {
+    overflow: scroll;
+}
+
+.square_btn{
+    height: 15px;
+    margin-bottom: 5px;
+    width: 40%;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #f7f7f7;
+    border-left: solid 6px #ff7c5c;
+    color: #ff7c5c;
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+}
+
+/*CSS for ACLog start*/
+.buttons{
+  display: inline-block !important;
+  float: right !important;
+  width: 80% !important;
+}
+
+.square_btn{
+    width: 80%;
+    height: 30px;
+}
+.square_btn_other{
+    width: 50%;
+}
+/*CSS for ACLog stop*/
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
